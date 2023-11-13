@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #CE0D0D;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #4caf50;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Student Performance Calculator</h1>
+    <form action="result/">
+        {% csrf_token %}
+
+        Hours Studied: <input type="text" required name="HS"><br><br>
+        Previous Test Score(Out of 100): <input type="text" required name="PTS"><br><br>
+        Hours Slept per day: <input type="text" required name="HSPD"><br><br>
+        Sample Question Papers Practiced: <input type="text" required name="SQP"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

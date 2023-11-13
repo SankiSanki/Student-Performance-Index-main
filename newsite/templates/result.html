@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light Gray */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.result-container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result-container p {
+    margin-bottom: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Result</h1>
+
+    <div class="result-container">
+        <p><strong>Hours Studied:</strong> {{ hours_studied }}</p>
+        <p><strong>Previous Test Score:</strong> {{ previous_test }}</p>
+        <p><strong>Hours Slept per day:</strong> {{ hours_slept }}</p>
+        <p><strong>Sample Question Papers Practiced:</strong> {{ sample_papers }}</p>
+        <p><strong>Student Performance Index:</strong> {{ student_performance }}</p>
+    </div>
+</body>
+</html>
